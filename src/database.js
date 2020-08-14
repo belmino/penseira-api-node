@@ -1,11 +1,11 @@
 const mariadb = require('mariadb')
 
 const pool = mariadb.createPool({
-    host: 'localhost',
-    port: '3309',
-    user: 'pensier',
-    password: 'p3nS13r',
-    database: 'pensieve'
+    host: process.env.DB_HOST,
+    port: process.env.DB_PORT,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    database: process.env.DB_BASE
 })
 
 async function getConnection() {

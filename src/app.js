@@ -14,6 +14,7 @@ const path = require('path')
 const tagsRoutes = require('./routes/tags.routes')
 const blocksRoutes = require('./routes/blocks.routes')
 
+
 const app = express()
 
 // Settings
