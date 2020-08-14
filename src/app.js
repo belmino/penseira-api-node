@@ -46,8 +46,8 @@ app.post('/', (req, res) => {
 })
 
 // app.use('/images', imagesRoutes)
-app.use('/tags', tagsRoutes)
-app.use('/blocks', blocksRoutes)
+app.use('/api/v1/tags', tagsRoutes)
+app.use('/api/v1/blocks', blocksRoutes)
 
 // Static Files
 app.use(express.static(path.join(__dirname, 'public')));
